@@ -1,11 +1,11 @@
 #include <Wire.h>
-#include <Beastdevices_INA3221.h>
+#include <NAV_INA3221.h>
 
 #define SERIAL_SPEED      115200    // serial baud rate
 #define PRINT_DEC_POINTS  3         // decimal points to print
 
 // Set I2C address to 0x41 (A0 pin -> VCC)
-Beastdevices_INA3221 ina3221(INA3221_ADDR41_VCC);
+NAV_INA3221 ina3221(INA3221_ADDR41_VCC);
 
 void setup() {
   Serial.begin(SERIAL_SPEED);
